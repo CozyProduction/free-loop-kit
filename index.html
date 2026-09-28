@@ -6,18 +6,18 @@
   <title>Free Loop Kit & Sample Packs – Cozy Production</title>
   <meta name="description" content="Download royalty-free free loop kits, trap drum loops, melodies, and sample packs instantly from Cozy Production.">
   
-  <!-- Updated Favicon Links -->
+  <!-- Favicon Links -->
   <link rel="icon" type="image/png" sizes="48x48" href="cozy_favicon_48x48.png">
   <link rel="apple-touch-icon" href="cozy_favicon_48x48.png">
 
   <style>
-    /* Dark theme styling matching your store */
+    /* Match store pure black background */
     body {
-      background-color: #0b0b0e;
+      background-color: #000000;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 40px 20px;
+      padding: 40px 20px 0 20px;
     }
 
     .container {
@@ -29,88 +29,178 @@
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: 8px;
+      font-weight: 600;
     }
 
     .subtitle {
       text-align: center;
-      color: #aaa;
+      color: #aaaaaa;
       margin-bottom: 12px;
     }
 
     .seo-intro {
       text-align: center;
-      color: #888;
+      color: #777777;
       font-size: 0.95rem;
       max-width: 700px;
       margin: 0 auto 40px auto;
       line-height: 1.5;
     }
 
-    /* Grid Layout for Loop Kits */
+    /* Grid Layout matching store product grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
+      gap: 32px 24px;
     }
 
-    /* Individual Product Card */
+    /* Clean Card Style with No Background Boxes */
     .card {
-      background: #13131a;
-      border: 1px solid #222230;
-      border-radius: 8px;
-      overflow: hidden;
+      background: transparent;
+      border: none;
       text-align: center;
-      padding: 16px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
       text-decoration: none;
       color: inherit;
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      border-color: #a855f7; /* Cozy purple hover glow */
+      transform: translateY(-4px);
+      opacity: 0.9;
     }
 
     .card img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
+      border-radius: 4px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
+      background-color: #000000;
     }
 
     .card h3 {
-      font-size: 1rem;
-      margin: 14px 0 6px 0;
-      font-weight: 500;
-      color: #ececec;
+      font-size: 0.95rem;
+      margin: 14px 0 4px 0;
+      font-weight: 400;
+      color: #dddddd;
     }
 
     .card .price {
-      font-size: 0.95rem;
-      color: #a855f7;
-      font-weight: 600;
+      font-size: 0.9rem;
+      color: #888888;
+      font-weight: 400;
     }
 
     /* SEO Article Links Section */
     .seo-links {
       margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #222;
+      padding-top: 24px;
+      border-top: 1px solid #111111;
       text-align: center;
     }
 
     .seo-links a {
-      color: #888;
+      color: #555555;
       margin: 0 10px;
       text-decoration: none;
+      font-size: 0.85rem;
     }
 
     .seo-links a:hover {
-      color: #fff;
+      color: #ffffff;
+    }
+
+    /* Main Site Footer Styling */
+    footer {
+      background-color: #000000;
+      margin-top: 60px;
+      padding: 60px 0 80px 0;
+      border-top: 1px solid #111111;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: start;
+      gap: 40px;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      color: #ffffff;
+      margin: 0 0 16px 0;
+      font-weight: 500;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col li {
+      margin-bottom: 12px;
+    }
+
+    .footer-col a {
+      color: #aaaaaa;
+      text-decoration: underline;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    /* Social Icons Styling */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background-color: #a3e635; /* Neon green social icons from screenshot */
+      color: #000000;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icons svg {
+      width: 18px;
+      height: 18px;
+      fill: #000000;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .footer-right {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -125,56 +215,56 @@
     <div class="grid">
 
       <!-- Item 1 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/west-coast-builder-kit-vol-1" class="card">
         <img src="west-coast.jpg" alt="West Coast Builder Free Loop Kit Vol. 1">
         <h3>West Coast Builder Kit Vol. 1</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 2 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/diabolical-loop-kit" class="card">
         <img src="diabolical loop kit.png" alt="The Diabolical Free Loop Kit and Sample Pack">
         <h3>The Diabolical Loop Kit</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 3 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/aurora-loop-kit" class="card">
         <img src="Aurora loop kit.png" alt="Aurora Free Melody Loop Kit">
         <h3>Aurora Loop Kit</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 4 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/dreamy-loop-kit" class="card">
         <img src="Dreamy loop kit.png" alt="Dreamy Free Guitar Loop Kit">
         <h3>Dreamy Loop Kit</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 5 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/cozy-loop-kit-1" class="card">
         <img src="the cozy loop kit vol 1.png" alt="The Cozy Free Loop Kit Vol.1">
         <h3>The Cozy Loop Kit Vol.1</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 6 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/cozy-loop-kit-2" class="card">
         <img src="the cozy loop kit vol 2.png" alt="The Cozy Free Loop Kit Vol.2">
         <h3>The Cozy Loop Kit Vol.2</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 7 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/halloweezy-loop-kit" class="card">
         <img src="the halloweezy loop kit vol 1.png" alt="The Halloweezy Free Loop Kit">
         <h3>The Halloweezy Loop Kit</h3>
         <span class="price">Free</span>
       </a>
 
       <!-- Item 8 -->
-      <a href="https://cozyproduction.store/collection/loopkits" class="card">
+      <a href="https://cozyproduction.store/b/cozy-heart-beats-loop-kit-vol-1" class="card">
         <img src="cozy heartbeats loop kit vol 1.png" alt="Cozy Heartbreaks Free Loop Kit Vol.1">
         <h3>Cozy Heartbreaks Loop Kit Vol.1</h3>
         <span class="price">Free</span>
@@ -182,13 +272,64 @@
 
     </div>
 
-    <!-- Additional Article Links -->
+    <!-- SEO Links Section -->
     <div class="seo-links">
       <a href="what-are-music-loops.html">What Are Music Loops?</a> •
       <a href="what-is-a-sample.html">What Is a Sample?</a> •
       <a href="free-sample-packs.html">Free Sample Packs</a>
     </div>
   </div>
+
+  <!-- Store Footer Matching Screenshot -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Left Column -->
+      <div class="footer-col">
+        <h4>Cozy Production</h4>
+        <ul>
+          <li><a href="https://cozyproduction.store/beats">Beats</a></li>
+          <li><a href="https://cozyproduction.store/journal">Cozy Journal</a></li>
+          <li><a href="https://cozyproduction.store/">Home</a></li>
+          <li><a href="https://cozyproduction.store/shop">Shop</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons Center -->
+      <div class="social-icons">
+        <!-- YouTube -->
+        <a href="https://youtube.com" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <!-- Pinterest -->
+        <a href="https://pinterest.com" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://tiktok.com" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.53-1.31 2.53.01 1.01.55 1.95 1.39 2.48.89.56 2.05.62 2.98.15.89-.44 1.49-1.37 1.57-2.36.03-3.82.01-7.65.02-11.47z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <!-- Right Column -->
+      <div class="footer-col footer-right">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="https://cozyproduction.store/about">About</a></li>
+          <li><a href="https://cozyproduction.store/contact">Contact</a></li>
+          <li><a href="https://cozyproduction.store/licensing">Licensing Terms</a></li>
+          <li><a href="https://cozyproduction.store/digital-delivery-policy">Digital Delivery Policy</a></li>
+          <li><a href="https://cozyproduction.store/clothing-order-policy">Clothing Order Policy</a></li>
+          <li><a href="https://cozyproduction.store/refund-policy">Refund Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>
